@@ -1,13 +1,3 @@
-#### Converts Bosch Small Traffic Lights Dataset Annotations to Pascal VOC Format
-
-```python
-python bosch_to_pascal.py input_yaml out_folder
-```
-
-# Original Repo Readme
-
----
-
 ## Bosch Small Traffic Lights Dataset
 
 This repository contains some scripts to get started with the Bosch Small Traffic Lights Dataset (BSTLD).
@@ -21,6 +11,13 @@ The dataset can be downloaded [here](https://hci.iwr.uni-heidelberg.de/node/6132
 
 Instructions on how to unzip *.zip.00X files can, for example, be found at https://hiro.bsd.uchicago.edu/node/3168
 Update label files are in the label_files folder.
+
+To convert Bosch Small Traffic Lights Dataset Annotations to Pascal VOC
+Format
+
+```
+ python bosch_to_pascal.py input_yaml out_folder
+```
 
 ### Sample Detections
 
