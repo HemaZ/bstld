@@ -25,10 +25,10 @@ def write_xml(savedir, image, imgWidth, imgHeight,
         line = ''
         for box in boxes:
             line = '1 '
-            line += str(box['x_min'])+' '
-            line += str(box['y_min'])+ ' '
-            line += str(box['x_max']-box['x_min'])+ ' '
-            line += str(box['y_max']-box['y_min'])+ '\n'
+            line += str(box['x_min']/imgWidth)+' '
+            line += str(box['y_min']/imgHeight)+ ' '
+            line += str(box['x_max']-box['x_min']/imgWidth)+ ' '
+            line += str(box['y_max']-box['y_min']/imgHeight)+ '\n'
             temp_xml.write(line)
             line = ''
 
